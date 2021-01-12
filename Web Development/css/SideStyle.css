@@ -1,0 +1,256 @@
+body {
+    background: white;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+.top-label {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 120px;
+    margin: 0;
+    justify-content: space-between;
+    align-content: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#header-text {
+    font-size: 2.3rem;
+    color: rgb(26, 128, 168);
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: space-between;
+    align-content: center;
+    color: grey;
+    text-transform: uppercase;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 0 11vw 0;
+}
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    color: grey;
+    text-transform: uppercase;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.destination-title {
+    grid-column: 1 / 9;
+    grid-row: 1;
+    align-self: center;
+    text-align: center;
+    color: grey;
+}
+.destination-description {
+    grid-column: 2 / 8;
+    grid-row: 2;
+    align-self: center;
+    text-align: center;
+    color: grey;
+}
+.link-to-image {
+    grid-column: 3 / 7;
+    grid-row: 3;
+    align-self: center;
+    text-align: center;
+}
+.destination-pictures {
+    grid-column: 3 / 7;
+    grid-row: 4;
+    align-self: center;
+    text-align: center;
+    color: grey;
+}
+
+.background-image-Transportation {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: space-between;
+    align-content: center;
+    color: white;
+    text-transform: uppercase;
+    background-image: url("KauaiPhotos/WaimeaCanyon2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.background-image-Flights {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: space-between;
+    align-content: center;
+    color: white;
+    text-transform: uppercase;
+    background-image: url("KauaiPhotos/Over Kauai.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.background-image-Camping {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: space-between;
+    align-content: center;
+    color: white;
+    text-transform: uppercase;
+    /*background-image: url("KauaiPhotos/Kealia Beach Camping.jpg");*/
+    background-image: url('together-water.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.moving-fish {
+    width: 5vw;
+    height: 5vw;
+    animation: movefish 170s infinite;
+    grid-column: 1 / 9;
+    grid-row: 1 / 6
+}
+.moving-fish-reverse {
+    width: 5vw;
+    height: 5vw;
+    animation: movefishreverse 130s infinite;
+    grid-column: 1 / 9;
+    grid-row: 1 / 6
+}
+.moving-fish-faster {
+    width: 5vw;
+    height: 5vw;
+    animation: movefish 150s infinite;
+    animation-delay: 4s;
+    grid-column: 1 / 9;
+    grid-row: 1 / 6
+}
+.moving-fish-opp {
+    width: 5vw;
+    height: 5vw;
+    animation: movefishopp 140s infinite;
+    animation-delay: 8s;
+    grid-column: 1 / 9;
+    grid-row: 1 / 6
+}
+
+@keyframes movefish {
+    0% {
+        transform: translate(0,0);
+    }
+    12% {
+        transform: translate(30vw, 150vw);
+    }
+    24% {
+        transform: translate(-30vw, 300vw);
+    }
+    36% {
+        transform: translate(30vw, 450vw);
+    }
+    48% {
+        transform: translate(-30vw, 600vw);
+    }
+    60% {
+        transform: translate(30vw, 450vw);
+    }
+    73% {
+        transform: translate(-30vw, 300vw);
+    }
+    86% {
+        transform: translate(30vw, 150vw);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes movefishreverse {
+    0% {
+        transform: translate(0,0);
+    }
+    12% {
+        transform: translate(-30vw, -190vw);
+    }
+    24% {
+        transform: translate(30vw, -380vw);
+    }
+    36% {
+        transform: translate(-30vw, -570vw);
+    }
+    48% {
+        transform: translate(30vw, -760vw);
+    }
+    60% {
+        transform: translate(-30vw, -570vw);
+    }
+    73% {
+        transform: translate(30vw, -380vw);
+    }
+    86% {
+        transform: translate(-30vw, -190vw);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes movefishopp {
+    0% {
+        transform: translate(0,0);
+    }
+    12% {
+        transform: translate(-33vw, 180vw);
+    }
+    24% {
+        transform: translate(27vw, 360vw);
+    }
+    36% {
+        transform: translate(-33vw, 540vw);
+    }
+    48% {
+        transform: translate(27vw, 720vw);
+    }
+    60% {
+        transform: translate(-33vw, 540vw);
+    }
+    73% {
+        transform: translate(27vw, 360vw);
+    }
+    86% {
+        transform: translate(-33vw, 180vw);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: grey;
+}
+
+a:hover {
+    color: red;
+}
+
+h2 {
+    color: rgb(255,255,0);
+}
+
+p {
+    color: rgb(255,255,0);
+    font-weight: bold;
+}
+

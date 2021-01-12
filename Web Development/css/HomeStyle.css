@@ -1,0 +1,138 @@
+body {
+    background: white;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+.top-label {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 120px;
+     background-color: rgb(26, 128, 168); 
+    margin: 0;
+    justify-content: space-between;
+    align-content: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#header-text {
+    font-size: 2.3rem;
+    color: rgb(26, 128, 168);
+    font-family: 'Roboto', sans-serif;
+}
+
+.head-image {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: space-between;
+    align-content: center;
+    color: white;
+    text-transform: uppercase;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Waimea_Canyon%2C_Kaua%CA%BBi.jpg/800px-Waimea_Canyon%2C_Kaua%CA%BBi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-content: center;
+    color: grey;
+    text-transform: uppercase;
+    margin: 0 0 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 0 0 0;
+}
+
+.moving-fish {
+    width: 5vw;
+    height: 5vw;
+    animation: movefish 40s infinite;
+    grid-column: 1 / 9;
+    grid-row: 1 / 6
+}
+
+.moving-fish-reverse {
+    width: 5vw;
+    height: 5vw;
+    animation: movefishreverse 40s infinite;
+    grid-column: 1 / 9;
+    grid-row: 1 / 6
+}
+
+@keyframes movefish {
+    0% {
+        transform: translate(0,0);
+    }
+    12% {
+        transform: translate(60vw, 4vw);
+    }
+    24% {
+        transform: translate(0vw, 8vw);
+    }
+    36% {
+        transform: translate(60vw, 12vw);
+    }
+    48% {
+        transform: translate(0vw, 16vw);
+    }
+    60% {
+        transform: translate(60vw, 12vw);
+    }
+    73% {
+        transform: translate(0vw, 8vw);
+    }
+    86% {
+        transform: translate(60vw, 4vw);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes movefishreverse {
+    0% {
+        transform: translate(0,0);
+    }
+    12% {
+        transform: translate(-60vw, -5vw);
+    }
+    24% {
+        transform: translate(0vw, -10vw);
+    }
+    36% {
+        transform: translate(-60vw, -15vw);
+    }
+    48% {
+        transform: translate(0vw, -20vw);
+    }
+    60% {
+        transform: translate(-60vw, -15vw);
+    }
+    73% {
+        transform: translate(0vw, -10vw);
+    }
+    86% {
+        transform: translate(-60vw, -5vw);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+h3 {
+    color: rgb(255,255,0);
+}
+
+a {
+    color: grey;
+}
+
+a:hover {
+    color: red;
+}
+

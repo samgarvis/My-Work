@@ -1,0 +1,7 @@
+{
+    "name": "Genre-App-Production",
+    "mail": {
+        "host": "prod-mail-server",
+        "password": ""
+    }
+}
